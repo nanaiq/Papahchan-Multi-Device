@@ -497,14 +497,14 @@ export async function handler(chatUpdate) {
                 if (chat) {
 	                if (!('isBanned' in chat)) chat.isBanned = false
 	                if (!('welcome' in chat)) chat.welcome = true
-	                if (!('detect' in chat)) chat.detect = false
+	                if (!('detect' in chat)) chat.detect = true
 	                if (!('sWelcome' in chat)) chat.sWelcome = ''
 	                if (!('sBye' in chat)) chat.sBye = ''
 	                if (!('sPromote' in chat)) chat.sPromote = ''
 	                if (!('sDemote' in chat)) chat.sDemote = ''
-	                if (!('antiDelete' in chat)) chat.antiDelete = false
-	                if (!('antiLink' in chat)) chat.antiLink = false
-	                if (!('viewOnce' in chat)) chat.viewOnce = false
+	                if (!('antiDelete' in chat)) chat.antiDelete = true
+	                if (!('antiLink' in chat)) chat.antiLink = true
+	                if (!('viewOnce' in chat)) chat.viewOnce = true
 			if (!('nsfw' in chat)) chat.nsfw = false
                         if (!('premnsfw' in chat)) chat.premnsfw = false
 			if (!('premium' in chat)) chat.premium = false
@@ -514,14 +514,14 @@ export async function handler(chatUpdate) {
 	            } else global.db.data.chats[m.chat] = {
 	                isBanned: false,
 	                welcome: true,
-	                detect: false,
+	                detect: true,
 	                sWelcome: '',
 	                sBye: '',
 	                sPromote: '',
 	                sDemote: '',
-	                antiDelete: false,
-	                antiLink: false,
-	                viewOnce: false,
+	                antiDelete: true,
+	                antiLink: true,
+	                viewOnce: true,
 			simi: false,
                         nsfw: false,
                         premnsfw: false,
@@ -538,7 +538,7 @@ export async function handler(chatUpdate) {
                 if (!('restrict' in settings)) settings.restrict = false
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
-                autoread: false,
+                autoread: true,
                 restrict: false
             }
         } catch (e) {
