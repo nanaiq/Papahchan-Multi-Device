@@ -126,8 +126,8 @@ global.hsquere = '⛶', '❏', '⫹⫺'
 global.l = '「'
 global.r = '」'
 // Sticker WM
-global.packname = ''
-global.author = ''
+global.packname = 'X-ZC'
+global.author = 'IG @hai_om.qw'
 
 global.multiplier = 69 // The higher, The harder levelup
 
