@@ -497,35 +497,35 @@ export async function handler(chatUpdate) {
                 if (chat) {
 	                if (!('isBanned' in chat)) chat.isBanned = false
 	                if (!('welcome' in chat)) chat.welcome = true
-	                if (!('detect' in chat)) chat.detect = false
+	                if (!('detect' in chat)) chat.detect = true
 	                if (!('sWelcome' in chat)) chat.sWelcome = ''
 	                if (!('sBye' in chat)) chat.sBye = ''
 	                if (!('sPromote' in chat)) chat.sPromote = ''
 	                if (!('sDemote' in chat)) chat.sDemote = ''
-	                if (!('antiDelete' in chat)) chat.antiDelete = false
-	                if (!('antiLink' in chat)) chat.antiLink = false
-	                if (!('viewOnce' in chat)) chat.viewOnce = false
+	                if (!('antiDelete' in chat)) chat.antiDelete = true
+	                if (!('antiLink' in chat)) chat.antiLink = true
+	                if (!('viewOnce' in chat)) chat.viewOnce = true
 			if (!('nsfw' in chat)) chat.nsfw = false
-                        if (!('premnsfw' in chat)) chat.premnsfw = false
-			if (!('premium' in chat)) chat.premium = false
+                        if (!('premnsfw' in chat)) chat.premnsfw = true
+			if (!('premium' in chat)) chat.premium = true
                         if (!('premiumTime' in chat)) chat.premiumTime = false
                         if (!('simi' in chat)) chat.simi = false
 	                if (!isNumber(chat.expired)) chat.expired = 0
 	            } else global.db.data.chats[m.chat] = {
 	                isBanned: false,
 	                welcome: true,
-	                detect: false,
+	                detect: true,
 	                sWelcome: '',
 	                sBye: '',
 	                sPromote: '',
 	                sDemote: '',
-	                antiDelete: false,
-	                antiLink: false,
-	                viewOnce: false,
+	                antiDelete: true,
+	                antiLink: true,
+	                viewOnce: true,
 			simi: false,
                         nsfw: false,
-                        premnsfw: false,
-			premium: false,
+                        premnsfw: true,
+			premium: true,
 			premiumTime: false,
 	                expired: 0
 	            }
@@ -534,11 +534,11 @@ export async function handler(chatUpdate) {
             if (typeof settings !== 'object') global.db.data.settings[this.user.jid] = {}
             if (settings) {
                 if (!('self' in settings)) settings.self = false
-                if (!('autoread' in settings)) settings.autoread = false
+                if (!('autoread' in settings)) settings.autoread = true
                 if (!('restrict' in settings)) settings.restrict = false
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
-                autoread: false,
+                autoread: true,
                 restrict: false
             }
         } catch (e) {
@@ -884,7 +884,7 @@ export async function deleteUpdate(message) {
         await this.reply(msg.chat, `
 Detected @${participant.split`@`[0]} deleted message
 To turn off this feature, type
-*.enable delete*
+*G USAH DI OFFin KONTOL*
 `.trim(), msg, { mentions: [participant] })
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
