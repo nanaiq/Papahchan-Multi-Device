@@ -33,8 +33,8 @@ async function mp4ToWebp(file) {
 			loop: 0
 		},
 		stickerMetadata: {
-			pack: '‎',
-			author: '‎'
+			pack: 'X-ZC',
+			author: 'IG @hai_om.qw'
 		},
 		sessionInfo: {
 			WA_VERSION: '2.2106.5',
