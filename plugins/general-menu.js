@@ -102,7 +102,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     mediaUrl: "https://Instagram.com/bot_whangsaf",
     mediaType: "VIDEO",
     description: "https://Instagram.com/bot_whangsaf", 
-    title: 'Simple Bot Esm',
+    title: 'Simple Bot By X-ZC',
     body: wm,
     thumbnail: thumb,
     sourceUrl: sgc
