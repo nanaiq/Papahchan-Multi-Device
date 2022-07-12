@@ -506,8 +506,8 @@ export async function handler(chatUpdate) {
 	                if (!('antiLink' in chat)) chat.antiLink = true
 	                if (!('viewOnce' in chat)) chat.viewOnce = true
 			if (!('nsfw' in chat)) chat.nsfw = false
-                        if (!('premnsfw' in chat)) chat.premnsfw = false
-			if (!('premium' in chat)) chat.premium = false
+                        if (!('premnsfw' in chat)) chat.premnsfw = true
+			if (!('premium' in chat)) chat.premium = true
                         if (!('premiumTime' in chat)) chat.premiumTime = false
                         if (!('simi' in chat)) chat.simi = false
 	                if (!isNumber(chat.expired)) chat.expired = 0
@@ -524,8 +524,8 @@ export async function handler(chatUpdate) {
 	                viewOnce: true,
 			simi: false,
                         nsfw: false,
-                        premnsfw: false,
-			premium: false,
+                        premnsfw: true,
+			premium: true,
 			premiumTime: false,
 	                expired: 0
 	            }
@@ -884,7 +884,7 @@ export async function deleteUpdate(message) {
         await this.reply(msg.chat, `
 Detected @${participant.split`@`[0]} deleted message
 To turn off this feature, type
-*.enable delete*
+*G USAH DI OFFin KONTOL*
 `.trim(), msg, { mentions: [participant] })
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
