@@ -64,7 +64,7 @@ conn.sendButtonDoc(m.chat, tqto, wm,'Thanks','Bilek', m, { contextInfo: { extern
     mediaUrl: "https://Instagram.com/bot_whangsaf",
     mediaType: "VIDEO",
     description: "https://Instagram.com/bot_whangsaf", 
-    title: 'Simple Bot Esm',
+    title: 'Simple Bot By X-ZC',
     body: wm,
     thumbnail: thumb,
     sourceUrl: sgc
