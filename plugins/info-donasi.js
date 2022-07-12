@@ -4,11 +4,11 @@ let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 let pepe = pp ? await (await fetch(pp)).buffer() : Buffer.alloc(0)
 let str = ` ${conn.getName(m.sender)} Want Support Bot?
 *PAYMENT ↓*
-_*Pulsa/Pulse(Telkomsel):*_ 082287219167
-_*Dana/Gopay:*_ 0895612153565
+_*Pulsa/Pulse(Telkomsel):*_ 081227250948
+_*Dana/Gopay:*_ 085641476033 
 Setelah melakukan donasi kirim bukti pembayaran ke owner,Dengan melakukan donasi,kamu telah mensupport bot ini agar on 24 jam dan fast respon
 `
-conn.sendHydrated(m.chat, str, wm, pepe, 'https://github.com/FahriAdison/', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
+conn.sendHydrated(m.chat, str, wm, pepe, 'http://tiny.cc/Nathalie', 'ISTAGRAM', null, null, [
 ['𝙼𝙴𝙽𝚄', '/menu']
 ], m)
 
