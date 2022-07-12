@@ -15,10 +15,10 @@ let teksbio = `*───────[ BIODATA OWNER ]───────*
 *Benci* : autis, seleb wangsaf kek kontol
 
 *───────[ SOSIAL MEDIA ]───────*
-*instagran* : http://tiny.cc/Nathalie
-*Facebook* : Markzuberking
-*Chanel Youtube* : 
-*Github:* 
+*instagran* : http://tiny.cc/Nathalie [Liat Doang G Follow TOLOL] 
+*Facebook* : Mark Zuckerberg
+*Chanel Youtube* : Jawed Karim
+*Github:* Tom Preston-Werner
 
 `
 conn.sendHydrated(m.chat, teksbio, wm, ppown, "wa.me/" + nomorown, "ᴄʜᴀᴛs", null,null, [["ᴅᴏɴᴀsɪ", '.donasi'], [null, null],[null,null]], m)
