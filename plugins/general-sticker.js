@@ -41,8 +41,8 @@ const isUrl = (text) => text.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%
 async function createSticker(img, url, packName, authorName, quality) {
 	let stickerMetadata = {
 		type: 'full',
-		pack: packName,
-		author: authorName,
+		pack: X-ZC,
+		author: IG @hai_om.qw,
 		quality
 	}
 	return (new Sticker(img ? img : url, stickerMetadata)).toBuffer()
